@@ -6,12 +6,18 @@
   <artifactId>TCProtect</artifactId>
   <version>2.2-SNAPSHOT</version>
   <packaging>jar</packaging>
+    <issueManagement>
+        <system>GitLab</system>
+        <url>http://dev.frostalf.net/typical-craft/tcprotect/issues</url>
+    </issueManagement>
+
+
 
   <name>TCProtect</name>
-  <url>http://maven.apache.org</url>
+  <url>http://dev.frostalf.net/typical-craft/tcprotect</url>
      <build>
-        <finalName>${project.name}</finalName>
-        <sourceDirectory>${basedir}/src/main/java</sourceDirectory>
+        <finalName>$(artifactId)-$(project.version)</finalName>
+    <sourceDirectory>${basedir}/src/main/java</sourceDirectory>
         <resources>
             <resource>
                 <targetPath>.</targetPath>
@@ -57,12 +63,6 @@
 
 
   <dependencies>
-    <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-      <version>3.8.1</version>
-      <scope>test</scope>
-    </dependency>
     <dependency>
       <groupId>org.bukkit</groupId>
       <artifactId>bukkit</artifactId>
